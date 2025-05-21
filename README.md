@@ -6,22 +6,25 @@ A containerized FastAPI service that ingests sales-call audio, runs speaker diar
 
 ## Table of Contents
 
+## Table of Contents
+
 1. [Features](#features)  
 2. [Prerequisites](#prerequisites)  
 3. [Repository Structure](#repository-structure)  
-4. [Local Installation & Setup](#local-installation--setup)  
-   1. [Clone & Virtualenv](#clone--virtualenv)  
-   2. [Environment Variables](#environment-variables)  
-   3. [Install Dependencies](#install-dependencies)  
-   4. [Run Locally](#run-locally)  
-   5. [Test with cURL/Postman](#test-with-curlpostman)  
-5. [Docker](#docker)  
-   1. [Build & Run (CPU-only)](#build--run-cpu-only)  
-   2. [Build & Run (GPU-enabled)](#build--run-gpu-enabled)  
-   3. [Verify Container GPU Support](#verify-container-gpu-support)  
+4. [Installation & Setup](#installation--setup)  
+   4.1 [Clone the repository](#clone-the-repository)  
+   4.2 [Create & activate a Python virtual environment](#create--activate-a-python-virtual-environment)  
+   4.3 [Configure environment variables](#configure-environment-variables)  
+   4.4 [Install Python dependencies](#install-python-dependencies)  
+   4.5 [Run the API locally](#run-the-api-locally)  
+   4.6 [Test the upload endpoint](#test-the-upload-endpoint)  
+5. [Docker Setup](#docker-setup)  
+   5.1 [CPU-only (Local Development)](#cpu-only-local-development)  
+   5.2 [GPU-enabled (Production on NVIDIA Server)](#gpu-enabled-production-on-nvidia-server)  
+   5.3 [Verify container status & logs](#verify-container-status--logs)  
 6. [API Reference](#api-reference)  
 7. [Contributing](#contributing)  
-8. [License](#license)  
+8. [License](#license)   
 
 ---
 
@@ -73,9 +76,10 @@ Sales-call-analysis-backend/
 ├── .gitignore
 └── LICENSE
 ```
+
 ---
 
-## Installation & Setup
+## Local Installation & Setup
 
 Follow these steps to get the Sales Call Tone Analysis backend up and running on your machine (or in Docker).  
 
