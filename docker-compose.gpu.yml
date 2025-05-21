@@ -1,0 +1,12 @@
+# docker-compose.gpu.yml
+version: "3.8"
+
+services:
+  backend:
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: ["gpu"]

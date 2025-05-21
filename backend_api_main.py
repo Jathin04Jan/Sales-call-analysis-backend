@@ -7,8 +7,8 @@ import uuid
 import os
 
 # import your transcription + analysis functions here
-from diarized_transcribe import runTranscribe
-from main import runAnalysis
+from backend.diarized_transcribe import runTranscribe
+from backend.main import runAnalysis
 
 app = FastAPI()
 

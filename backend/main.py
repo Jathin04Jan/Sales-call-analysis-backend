@@ -4,9 +4,10 @@ import json
 import argparse
 from dotenv import load_dotenv
 
-from open_smile_processor import OpenSmileProcessor
-from feature_summarizer import FeatureSummarizer
-from llm_analyzer import LLMAnalyzer
+#from open_smile_processor import OpenSmileProcessor
+from backend.feature_summarizer import FeatureSummarizer
+from backend.llm_analyzer import LLMAnalyzer
+from backend.open_smile_processor import OpenSmileProcessor
 
 
 def main(audio_file: str, transcript_file: str):
