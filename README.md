@@ -23,7 +23,8 @@ A containerized FastAPI service that ingests sales-call audio, runs speaker diar
    5.2 [GPU-enabled (Production on NVIDIA Server)](#gpu-enabled-production-on-nvidia-server)  
    5.3 [Verify container status & logs](#verify-container-status--logs)  
 6. [API Reference](#api-reference)    
-
+7. [Contributing](#contributing)  
+8. [License](#license) 
 ---
 
 ## Features
@@ -217,4 +218,79 @@ docker-compose -f docker-compose.yml -f docker-compose.gpu.yml up --build -d
 
 ---
 
-Your backend is now fully installed, configured, and containerized—ready for both CPU-only local development and GPU-accelerated production deployments.  
+Your backend is now fully installed, configured, and containerized—ready for both CPU-only local development and GPU-accelerated production deployments. 
+
+---
+
+## API Reference
+
+### `POST /api/upload`
+
+Submit an audio file to run diarization, transcription, feature extraction and LLM analysis.
+
+- **URL**: `/api/upload`  
+- **Method**: `POST`  
+- **Headers**:  
+  - `Accept: application/json`  
+- **Body** (`multipart/form-data`):  
+  - **Key**: `file` (type: File) — your `.wav` or `.mp3` audio  
+
+**Example cURL**  
+```bash
+curl -X POST http://127.0.0.1:8000/api/upload \
+  -F "file=@/full/path/to/test.wav" \
+  -H "Accept: application/json"
+```
+
+**Successful Response** (HTTP 200)  
+```json
+{
+  "call_id": "c7f9e2d4-1234-5678-abcd-9012ef345678",
+  "transcript": [
+    {
+      "speaker": "SPEAKER_00",
+      "start": 0.84,
+      "end": 5.88,
+      "text": "Thank you for the presentation…"
+    }
+  ],
+  "features": {
+    "mean_pitch_semitone": 32.7,
+    "pitch_stddev_semitone": 5.2,
+    "mean_hnr": 8.3,
+    "jitter_local": 0.0196
+  },
+  "summary": "Based on the acoustic features and transcript, the speaker demonstrated a steady mid-range pitch…"
+}
+```
+
+---
+
+## Contributing
+
+We welcome improvements! Please follow these steps:
+
+1. **Fork** the repository on GitHub  
+2. **Clone** your fork & create a feature branch:  
+   ```bash
+   git clone https://github.com/Jathin04Jan/Sales-call-analysis-backend.git
+   cd Sales-call-analysis-backend
+   git checkout -b feature/your-feature-name
+   ```
+3. **Make changes** and add tests if applicable  
+4. **Commit** with a clear message:  
+   ```bash
+   git add .
+   git commit -m "Add [short description]"
+   ```
+5. **Push** your branch:  
+   ```bash
+   git push origin feature/your-feature-name
+   ```
+6. **Open a Pull Request** on the original repo
+
+---
+
+## License
+
+This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.  
