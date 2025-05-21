@@ -1,0 +1,20 @@
+[
+  {
+    "speaker": "SPEAKER_00",
+    "start": 0.84096875,
+    "end": 5.886593750000001,
+    "text": "Thank you for the presentation, but I already have a life insurance with another company and I'm happy with my current policy."
+  },
+  {
+    "speaker": "SPEAKER_01",
+    "start": 9.818468750000001,
+    "end": 22.22159375,
+    "text": "I understand, however, it might be worth comparing policies. Ours includes a return of premium rider, an annual gym membership contribution, and coverage for critical illnesses. Could we explore how it might offer better value?"
+  },
+  {
+    "speaker": "SPEAKER_00",
+    "start": 26.153468750000002,
+    "end": 30.70971875,
+    "text": "We're looking for a partnership, not just a transaction. We want devices that truly reflect our brand and."
+  }
+]

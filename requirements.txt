@@ -1,0 +1,31 @@
+# Audio feature extraction
+opensmile
+
+# Data processing
+pandas
+
+# Audio slicing
+pydub
+
+# Web framework & server
+fastapi
+uvicorn[standard]
+python-multipart   # for form-data file uploads
+
+# Environment vars
+python-dotenv
+
+# OpenAI APIs (Whisper + LLM)
+openai>=1.0.0
+
+# LangChain
+langchain-core
+langchain-community
+
+# Speaker diarization
+torch            # PyTorch with GPU/CPU support
+torchaudio
+pyannote.audio
+
+# (optional) If you end up using any vision modules in pyannote:
+# torchvision

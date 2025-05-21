@@ -1,0 +1,15 @@
+# Env files
+.env
+
+# editor files
+.DS_Store
+
+# virtualenv
+.venv
+
+#toneEnv
+toneEnv/
+*.pyc
+__pycache__/
+*.dylib
+*.so
