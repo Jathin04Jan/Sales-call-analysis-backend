@@ -73,6 +73,7 @@ Sales-call-analysis-backend/
 ├── .gitignore
 └── LICENSE
 ```
+---
 
 ## Installation & Setup
 
@@ -83,7 +84,7 @@ Follow these steps to get the Sales Call Tone Analysis backend up and running on
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/<your-username>/Sales-call-analysis-backend.git
+git clone https://github.com/Jathin04Jan/Sales-call-analysis-backend.git
 cd Sales-call-analysis-backend
 ```
 
