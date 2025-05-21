@@ -79,7 +79,7 @@ Sales-call-analysis-backend/
 
 ---
 
-## Local Installation & Setup
+## Installation & Setup
 
 Follow these steps to get the Sales Call Tone Analysis backend up and running on your machine (or in Docker).  
 
