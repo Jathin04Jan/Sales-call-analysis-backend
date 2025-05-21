@@ -22,9 +22,7 @@ A containerized FastAPI service that ingests sales-call audio, runs speaker diar
    5.1 [CPU-only (Local Development)](#cpu-only-local-development)  
    5.2 [GPU-enabled (Production on NVIDIA Server)](#gpu-enabled-production-on-nvidia-server)  
    5.3 [Verify container status & logs](#verify-container-status--logs)  
-6. [API Reference](#api-reference)  
-7. [Contributing](#contributing)  
-8. [License](#license)   
+6. [API Reference](#api-reference)    
 
 ---
 
