@@ -245,22 +245,9 @@ curl -X POST http://127.0.0.1:8000/api/upload \
 **Successful Response** (HTTP 200)  
 ```json
 {
-  "call_id": "c7f9e2d4-1234-5678-abcd-9012ef345678",
-  "transcript": [
-    {
-      "speaker": "SPEAKER_00",
-      "start": 0.84,
-      "end": 5.88,
-      "text": "Thank you for the presentation…"
-    }
-  ],
-  "features": {
-    "mean_pitch_semitone": 32.7,
-    "pitch_stddev_semitone": 5.2,
-    "mean_hnr": 8.3,
-    "jitter_local": 0.0196
-  },
-  "summary": "Based on the acoustic features and transcript, the speaker demonstrated a steady mid-range pitch…"
+    "call_id": "049c6c93-e908-4f58-8d17-fc5a746c70e9",
+    "transcript": "[{\"speaker\": \"SPEAKER_00\", \"start\": 0.84096875, \"end\": 5.886593750000001, \"text\": \"Thank you for the presentation, but I already have a life insurance with another company and I'm happy with my current policy.\"}, {\"speaker\": \"SPEAKER_01\", \"start\": 9.818468750000001, \"end\": 22.22159375, \"text\": \"I understand, however, it might be worth comparing policies. Ours includes a return of premium rider, an annual gym membership contribution, and coverage for critical illnesses. Could we explore how it might offer better value?\"}, {\"speaker\": \"SPEAKER_00\", \"start\": 26.153468750000002, \"end\": 30.70971875, \"text\": \"We're looking for a partnership, not just a transaction. We want devices that truly reflect our brand and.\"}]",
+    "summary": "**Summary of Sales Call Performance**\n\n**Strengths:**\n- The salesperson (SPEAKER_01) demonstrates empathy and understanding, acknowledging the prospect's current satisfaction.\n- Clear articulation of product differentiators (return of premium rider, gym membership contribution, critical illness coverage) shows good product knowledge.\n- The tone, inferred from acoustic features (mean pitch ~29.56 semitones, moderate HNR ~4.92, and jitter ~0.0295), suggests a moderately steady and clear voice, which supports professionalism and clarity.\n\n**Areas for Improvement:**\n- The prospect (SPEAKER_00) appears disengaged and focused on partnership values rather than transactional sales, indicating a possible mismatch in communication approach.\n- The salesperson's response could be more tailored to address the prospect’s desire for partnership and brand alignment, rather than only emphasizing product features.\n- The relatively low Harmonics-to-Noise Ratio (HNR) and noticeable jitter hint at a voice quality that could be smoother or more confident to enhance persuasion.\n\n**Actionable Recommendations:**\n1. **Adapt Messaging:** Shift from a feature-centric pitch to a value-based conversation aligning with the prospect’s focus on partnership and brand fit.\n2. **Enhance Vocal Delivery:** Work on voice modulation to increase HNR and reduce jitter, aiming for a clearer, more confident tone that can better engage the prospect.\n3. **Engage Prospect More Deeply:** Use open-ended questions to invite the prospect to share more about their brand values and partnership expectations, enabling a more personalized and consultative dialogue.\n4. **Follow Up Strategically:** Propose a collaborative session to co-create solutions that reflect the prospect’s brand identity, reinforcing the partnership intent rather than a standard sales offer."
 }
 ```
 
@@ -268,7 +255,7 @@ curl -X POST http://127.0.0.1:8000/api/upload \
 
 ## Contributing
 
-We welcome improvements! Please follow these steps:
+I welcome Improvements ! Please follow these steps:
 
 1. **Fork** the repository on GitHub  
 2. **Clone** your fork & create a feature branch:  
